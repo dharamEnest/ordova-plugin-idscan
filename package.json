@@ -1,0 +1,35 @@
+{
+    "name": "cordova-plugin-idscan",
+    "version": "2.0.0",
+    "description": "This plugin allows you to scan ids.",
+    "cordova": {
+        "id": "cordova-plugin-idscan",
+        "platforms": [
+            "ios",
+            "android",
+            "wp8",
+            "windows",
+            "blackberry10"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dharamEnest/ordova-plugin-idscan.git"
+    },
+    "keywords": [
+        "idscan",
+        "idscan by srn"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=5.0.0"
+        }
+    ],
+    "author": "dharamEnest <surinder.enest@gmail.com> (https://github.com/dharamEnest)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/dharamEnest/ordova-plugin-idscan/issues"
+    },
+    "homepage": "https://github.com/dharamEnest/ordova-plugin-idscan#readme"
+}
