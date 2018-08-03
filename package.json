@@ -6,10 +6,7 @@
         "id": "cordova-plugin-idscan",
         "platforms": [
             "ios",
-            "android",
-            "wp8",
-            "windows",
-            "blackberry10"
+            "android"
         ]
     },
     "repository": {
