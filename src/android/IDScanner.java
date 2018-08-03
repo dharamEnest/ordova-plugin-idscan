@@ -82,7 +82,7 @@ public class IDScanner extends CordovaPlugin {
     }
 
     private void parse(String scanResult) {
-        this.callbackContext.success(scanResult.getBytes("UTF8"));
+        this.callbackContext.success(scanResult);
         // DLParser parser = new DLParser();
         // try {
         // Context context=this.cordova.getActivity().getApplicationContext();
