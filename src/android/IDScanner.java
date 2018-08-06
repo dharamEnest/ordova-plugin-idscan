@@ -53,7 +53,6 @@ public class IDScanner extends CordovaPlugin {
             Log.d(TAG, "invalid action");
             return false;
         }
-
         return true;
     }
 
@@ -82,41 +81,41 @@ public class IDScanner extends CordovaPlugin {
     }
 
     private void parse(String scanResult) {
-        this.callbackContext.success(scanResult);
-        // DLParser parser = new DLParser();
-        // try {
-        // Context context=this.cordova.getActivity().getApplicationContext();
-        // parser.setup(context, this.parserKey);
-        // DLParser.DLResult res = parser.parse(scanResult.getBytes("UTF8"));
+        // this.callbackContext.success(scanResult);
+        DLParser parser = new DLParser();
+        try {
+            Context context = this.cordova.getActivity().getApplicationContext();
+            parser.setup(context, this.parserKey);
+            DLParser.DLResult res = parser.parse(scanResult.getBytes("UTF8"));
 
-        // // Note that there are more fields if we need them,
-        // // refer to DriverLicenseParser.h in iOS code
-        // JSONObject parseData = new JSONObject();
-        // parseData.put("fullName", res.fullName);
-        // parseData.put("firstName", res.firstName);
-        // parseData.put("middleName", res.middleName);
-        // parseData.put("lastName", res.lastName);
-        // parseData.put("nameSuffix", res.nameSuffix);
-        // parseData.put("namePrefix", res.namePrefix);
-        // parseData.put("address1", res.address1);
-        // parseData.put("address2", res.address2);
-        // parseData.put("city", res.city);
-        // parseData.put("postalCode", res.postalCode);
-        // parseData.put("country", res.country);
-        // parseData.put("birthdate", res.birthdate);
-        // parseData.put("issueDate", res.issueDate);
-        // parseData.put("expirationDate", res.expirationDate);
-        // parseData.put("licenseNumber", res.licenseNumber);
-        // parseData.put("issuedBy", res.issuedBy);
-        // parseData.put("gender", res.gender);
+            // Note that there are more fields if we need them,
+            // refer to DriverLicenseParser.h in iOS code
+            JSONObject parseData = new JSONObject();
+            parseData.put("fullName", res.fullName);
+            parseData.put("firstName", res.firstName);
+            parseData.put("middleName", res.middleName);
+            parseData.put("lastName", res.lastName);
+            parseData.put("nameSuffix", res.nameSuffix);
+            parseData.put("namePrefix", res.namePrefix);
+            parseData.put("address1", res.address1);
+            parseData.put("address2", res.address2);
+            parseData.put("city", res.city);
+            parseData.put("postalCode", res.postalCode);
+            parseData.put("country", res.country);
+            parseData.put("birthdate", res.birthdate);
+            parseData.put("issueDate", res.issueDate);
+            parseData.put("expirationDate", res.expirationDate);
+            parseData.put("licenseNumber", res.licenseNumber);
+            parseData.put("issuedBy", res.issuedBy);
+            parseData.put("gender", res.gender);
 
-        // this.callbackContext.success(parseData);
-        // } catch (JSONException e) {
-        // this.callbackContext.error(e.toString());
-        // } catch (DLParser.DLParserException e) {
-        // this.callbackContext.error(e.toString());
-        // } catch (UnsupportedEncodingException e) {
-        // this.callbackContext.error(e.toString());
-        // }
+            this.callbackContext.success(parseData);
+        } catch (JSONException e) {
+            this.callbackContext.error(e.toString());
+        } catch (DLParser.DLParserException e) {
+            this.callbackContext.error(e.toString());
+        } catch (UnsupportedEncodingException e) {
+            this.callbackContext.error(e.toString());
+        }
     }
 }
