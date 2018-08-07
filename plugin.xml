@@ -38,7 +38,7 @@
       <source-file src="src/android/sdk/x86/libidscan_parser.so" target-dir="app/src/main/libs/x86/" />
       
       <framework src="src/android/build-scanner.gradle" custom="true" type="gradleReference" />
-      <resource-file src="src/android/sdk/PDF417Scanner.aar" target="app/src/main/libs/PDF417Scanner.aar" />    
+      <resource-file src="src/android/sdk/PDF417Scanner.aar" target="PDF417Scanner.aar" />    
     </platform>
 
     <!-- ios -->
