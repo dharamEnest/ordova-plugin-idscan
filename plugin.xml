@@ -25,20 +25,20 @@
         </feature>
       </config-file>
       
-      <!-- <config-file target="app/src/main/AndroidManifest.xml" parent="/*">
+      <config-file target="app/src/main/AndroidManifest.xml" parent="/*">
           <uses-permission android:name="android.permission.CAMERA" />
           <uses-feature android:name="android.hardware.camera" android:required="true" />
           <uses-feature android:name="android.hardware.camera.autofocus" />
-      </config-file> -->
+      </config-file>
       
-      <source-file src="src/android/IDScanner.java" target-dir="src/com/dpms/idscan" />
-      <source-file src="src/android/sdk/dlparserlib.jar" target-dir="libs" />
-      <source-file src="src/android/sdk/armeabi/libidscan_parser.so" target-dir="libs/armeabi/" />
-      <source-file src="src/android/sdk/armeabi-v7a/libidscan_parser.so" target-dir="libs/armeabi-v7a/" />
-      <source-file src="src/android/sdk/x86/libidscan_parser.so" target-dir="libs/x86/" />
+      <source-file src="src/android/IDScanner.java" target-dir="src/main/java/com/dpms/idscan"/>
+      <source-file src="src/android/sdk/dlparserlib.jar" target-dir="src/main/libs" />
+      <source-file src="src/android/sdk/armeabi/libidscan_parser.so" target-dir="src/main/libs/armeabi/" />
+      <source-file src="src/android/sdk/armeabi-v7a/libidscan_parser.so" target-dir="src/main/libs/armeabi-v7a/" />
+      <source-file src="src/android/sdk/x86/libidscan_parser.so" target-dir="src/main/libs/x86/" />
       
       <framework src="src/android/build-scanner.gradle" custom="true" type="gradleReference" />
-      <resource-file src="src/android/sdk/PDF417Scanner.aar" target="libs/PDF417Scanner.aar" />    
+      <resource-file src="src/android/sdk/PDF417Scanner.aar" target="src/main/libs/PDF417Scanner.aar" />    
     </platform>
 
     <!-- ios -->
