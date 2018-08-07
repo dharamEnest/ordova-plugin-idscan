@@ -7,7 +7,7 @@ I wrote this code for a project for [DPM Solutions, Inc](http://dpmsinc.net). I 
 
 To install the plugin directly from here, use the Cordova CLI command:
 
-    cordova plugin add https://github.com/amHammock/cordova-plugin-idscan
+    cordova plugin add https://github.com/dharamEnest/cordova-plugin-idscan
 
 Or you can clone the repository locally if you would like to modify the code and install from there. The plugin is exposed to your Cordova javascript code as the `IDScanner` object. Simply call the `scan()` function like so:
 
