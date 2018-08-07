@@ -32,7 +32,7 @@
       </config-file>
       
       <source-file src="src/android/IDScanner.java" target-dir="src/com/dpms/idscan" />
-      <source-file src="src/android/sdk/dlparserlib.jar" target-dir="src/main/libs" />
+      <source-file src="src/android/sdk/dlparserlib.jar" target-dir="app/src/main/libs" />
       <!--<source-file src="src/android/sdk/armeabi/libidscan_parser.so" target-dir="libs/armeabi/" />
       <source-file src="src/android/sdk/armeabi-v7a/libidscan_parser.so" target-dir="libs/armeabi-v7a/" />
       <source-file src="src/android/sdk/x86/libidscan_parser.so" target-dir="libs/x86/" />
