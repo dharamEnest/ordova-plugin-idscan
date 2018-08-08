@@ -27,11 +27,11 @@
         </feature>
       </config-file>
 
-      <config-file parent="/*" target="AndroidManifest.xml" >
+      <!-- <config-file parent="/*" target="AndroidManifest.xml" >
           <uses-permission android:name="android.permission.CAMERA" />
           <uses-feature android:name="android.hardware.camera" android:required="true" />
           <uses-feature android:name="android.hardware.camera.autofocus" />
-      </config-file>
+      </config-file> -->
       
       <source-file src="src/android/IDScanner.java" target-dir="src/com/dpms/idscan" />
       <source-file src="src/android/sdk/dlparserlib.jar" target-dir="libs" />
