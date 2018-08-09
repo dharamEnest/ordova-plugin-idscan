@@ -30,9 +30,9 @@
 
         <source-file src="src/android/IDScanner.java" target-dir="src/com/dpms/idscan" />
         <source-file src="src/android/sdk/dlparserlib.jar" target-dir="app/libs" />
-        <source-file src="src/android/sdk/armeabi/libidscan_parser.so" target-dir="app/libs/armeabi/" />
-        <source-file src="src/android/sdk/armeabi-v7a/libidscan_parser.so" target-dir="app/libs/armeabi-v7a/" />
-        <source-file src="src/android/sdk/x86/libidscan_parser.so" target-dir="app/libs/x86/" />
+        <source-file src="src/android/sdk/armeabi/libidscan_parser.so" target-dir="app/jniLibs/armeabi/" />
+        <source-file src="src/android/sdk/armeabi-v7a/libidscan_parser.so" target-dir="app/jniLibs/armeabi-v7a/" />
+        <source-file src="src/android/sdk/x86/libidscan_parser.so" target-dir="app/jniLibs/x86/" />
         <resource-file src="src/android/sdk/PDF417Scanner.aar" target="app/libs/PDF417Scanner.aar" />
 
         <framework src="src/android/build-scanner.gradle" custom="true" type="gradleReference" />
